@@ -47,6 +47,38 @@
           </li>
       @endcanany
 
+     <li class="treeview">
+      <a href="#">
+        <i class="fa icon-attendance"></i>
+        <span>Account</span>
+        <span class="pull-right-container">
+          <i class="fa fa-angle-left pull-right"></i>
+        </span>
+      </a>
+      <ul class="treeview-menu">
+        <li>
+          <a href="{{ URL::route('employee-salary.index') }}">
+            <i class="fa icon-member"></i> <span>Employee Salary</span>
+          </a>
+        </li>
+        <li>
+          <a href="{{ URL::route('feetype.index') }}">
+            <i class="fa icon-member"></i> <span>Fee Type</span>
+          </a>
+        </li>
+        {{-- <li>
+          <a href="{{ URL::route('invoice.index') }}">
+            <i class="fa icon-student"></i> <span>Invoice</span>
+          </a>
+        </li> --}}
+        <li>
+          <a href="{{ URL::route('salary-template.index') }}">
+            <i class="fa icon-student"></i> <span>Salary Template</span>
+          </a>
+        </li>
+      </ul>
+      </li>
+
       <li class="treeview">
         <a href="#">
           <i class="fa icon-academicmain"></i>

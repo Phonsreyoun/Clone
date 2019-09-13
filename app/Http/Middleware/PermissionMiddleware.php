@@ -19,15 +19,15 @@ class PermissionMiddleware
 
         $routeName = $request->route()->getName();
 
-        if(!$request->user()->can($routeName)) {
-            if($request->ajax()) {
-                return response('Access denied!', 401);
-            }
-            abort(401);
-        }
+        // if(!$request->user()->can($routeName)) {
+        //     if($request->ajax()) {
+        //         return response('Access denied!', 401);
+        //     }
+        //     abort(401);
+        // }
 
         //check for user force logout
-        if($request->user()->force_logout){
+        if ($request->user()->force_logout) {
             $request->user()->force_logout = 0;
             $request->user()->save();
 

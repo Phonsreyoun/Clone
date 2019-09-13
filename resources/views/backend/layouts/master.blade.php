@@ -106,6 +106,10 @@
 <script src="{{ asset(mix('/js/theme.js')) }}"></script>
 <!-- app js -->
 <script src="{{ asset(mix('/js/app.js')) }}"></script>
+<!-- sweet alert js -->
+
+<script src="{{ asset('/js/deleteconfirm.js') }}"></script>
+<script src="{{ asset('/js/sweetalert2.all.js') }}"></script>
 
 <!-- Extra js from child page -->
 @yield("extraScript")
